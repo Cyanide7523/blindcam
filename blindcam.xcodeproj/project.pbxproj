@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002A1E141F9315DC00DB3D31 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002A1E131F9315DC00DB3D31 /* PhotoViewController.swift */; };
+		009D38E21F92756000978604 /* FrontCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D38E11F92756000978604 /* FrontCameraViewController.swift */; };
+		7912E5251F0F3051003FE68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7912E5241F0F3051003FE68F /* AppDelegate.swift */; };
+		7912E52A1F0F3051003FE68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7912E5281F0F3051003FE68F /* Main.storyboard */; };
+		7912E52D1F0F3051003FE68F /* blindcam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7912E52B1F0F3051003FE68F /* blindcam.xcdatamodeld */; };
+		7912E52F1F0F3051003FE68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7912E52E1F0F3051003FE68F /* Assets.xcassets */; };
+		7912E5321F0F3051003FE68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7912E5301F0F3051003FE68F /* LaunchScreen.storyboard */; };
+		799B1A6D1F2F652000741CD0 /* RearCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7912E5261F0F3051003FE68F /* RearCameraViewController.swift */; };
+		799B1A701F2F654900741CD0 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799B1A6F1F2F653800741CD0 /* CoreML.framework */; };
+		799B1A711F2F671000741CD0 /* blindcam.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 799B1A6C1F2F642000741CD0 /* blindcam.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002A1E131F9315DC00DB3D31 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		009D38E11F92756000978604 /* FrontCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCameraViewController.swift; sourceTree = "<group>"; };
+		7912E5211F0F3051003FE68F /* blindcam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blindcam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7912E5241F0F3051003FE68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7912E5261F0F3051003FE68F /* RearCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearCameraViewController.swift; sourceTree = "<group>"; };
+		7912E5291F0F3051003FE68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7912E52C1F0F3051003FE68F /* Inception.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Inception.xcdatamodel; sourceTree = "<group>"; };
+		7912E52E1F0F3051003FE68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7912E5311F0F3051003FE68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7912E5331F0F3051003FE68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799B1A6C1F2F642000741CD0 /* blindcam.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = blindcam.mlmodel; sourceTree = "<group>"; };
+		799B1A6F1F2F653800741CD0 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7912E51E1F0F3051003FE68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799B1A701F2F654900741CD0 /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7912E5181F0F3051003FE68F = {
+			isa = PBXGroup;
+			children = (
+				7912E5231F0F3051003FE68F /* blindcam */,
+				7912E5221F0F3051003FE68F /* Products */,
+				799B1A6E1F2F653800741CD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7912E5221F0F3051003FE68F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7912E5211F0F3051003FE68F /* blindcam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7912E5231F0F3051003FE68F /* blindcam */ = {
+			isa = PBXGroup;
+			children = (
+				799B1A6C1F2F642000741CD0 /* blindcam.mlmodel */,
+				7912E5241F0F3051003FE68F /* AppDelegate.swift */,
+				7912E5261F0F3051003FE68F /* RearCameraViewController.swift */,
+				009D38E11F92756000978604 /* FrontCameraViewController.swift */,
+				002A1E131F9315DC00DB3D31 /* PhotoViewController.swift */,
+				7912E5281F0F3051003FE68F /* Main.storyboard */,
+				7912E52E1F0F3051003FE68F /* Assets.xcassets */,
+				7912E5301F0F3051003FE68F /* LaunchScreen.storyboard */,
+				7912E5331F0F3051003FE68F /* Info.plist */,
+				7912E52B1F0F3051003FE68F /* blindcam.xcdatamodeld */,
+			);
+			path = blindcam;
+			sourceTree = "<group>";
+		};
+		799B1A6E1F2F653800741CD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799B1A6F1F2F653800741CD0 /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7912E5201F0F3051003FE68F /* blindcam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7912E54C1F0F3052003FE68F /* Build configuration list for PBXNativeTarget "blindcam" */;
+			buildPhases = (
+				7912E51D1F0F3051003FE68F /* Sources */,
+				7912E51E1F0F3051003FE68F /* Frameworks */,
+				7912E51F1F0F3051003FE68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blindcam;
+			productName = Inception;
+			productReference = 7912E5211F0F3051003FE68F /* blindcam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7912E5191F0F3051003FE68F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = iostreamh;
+				TargetAttributes = {
+					7912E5201F0F3051003FE68F = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7912E51C1F0F3051003FE68F /* Build configuration list for PBXProject "blindcam" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7912E5181F0F3051003FE68F;
+			productRefGroup = 7912E5221F0F3051003FE68F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7912E5201F0F3051003FE68F /* blindcam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7912E51F1F0F3051003FE68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7912E5321F0F3051003FE68F /* LaunchScreen.storyboard in Resources */,
+				7912E52F1F0F3051003FE68F /* Assets.xcassets in Resources */,
+				7912E52A1F0F3051003FE68F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7912E51D1F0F3051003FE68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799B1A711F2F671000741CD0 /* blindcam.mlmodel in Sources */,
+				7912E52D1F0F3051003FE68F /* blindcam.xcdatamodeld in Sources */,
+				009D38E21F92756000978604 /* FrontCameraViewController.swift in Sources */,
+				799B1A6D1F2F652000741CD0 /* RearCameraViewController.swift in Sources */,
+				7912E5251F0F3051003FE68F /* AppDelegate.swift in Sources */,
+				002A1E141F9315DC00DB3D31 /* PhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7912E5281F0F3051003FE68F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7912E5291F0F3051003FE68F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7912E5301F0F3051003FE68F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7912E5311F0F3051003FE68F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7912E54A1F0F3052003FE68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7912E54B1F0F3052003FE68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7912E54D1F0F3052003FE68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSN52PT9J2;
+				INFOPLIST_FILE = blindcam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyanproduction.blindcam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7912E54E1F0F3052003FE68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSN52PT9J2;
+				INFOPLIST_FILE = blindcam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyanproduction.blindcam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7912E51C1F0F3051003FE68F /* Build configuration list for PBXProject "blindcam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7912E54A1F0F3052003FE68F /* Debug */,
+				7912E54B1F0F3052003FE68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7912E54C1F0F3052003FE68F /* Build configuration list for PBXNativeTarget "blindcam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7912E54D1F0F3052003FE68F /* Debug */,
+				7912E54E1F0F3052003FE68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7912E52B1F0F3051003FE68F /* blindcam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7912E52C1F0F3051003FE68F /* Inception.xcdatamodel */,
+			);
+			currentVersion = 7912E52C1F0F3051003FE68F /* Inception.xcdatamodel */;
+			path = blindcam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7912E5191F0F3051003FE68F /* Project object */;
+}
